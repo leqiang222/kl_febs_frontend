@@ -15,7 +15,7 @@ let FEBS_REQUEST = axios.create({
   }
 })
 
-// 拦截请求
+// 拦截请
 FEBS_REQUEST.interceptors.request.use((config) => {
   let expireTime = store.state.account.expireTime
   let now = moment().format('YYYYMMDDHHmmss')
